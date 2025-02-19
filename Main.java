@@ -35,5 +35,11 @@ public class Main
     word.set(word.size()-1, firstWord);
 
     System.out.println("Replacing the last word with the first word" + word);  
+
+    if(word.size() > 2)
+    {
+      word.remove(0);
+      System.out.println("removed the first word" + word);
+    }
    }
 }
