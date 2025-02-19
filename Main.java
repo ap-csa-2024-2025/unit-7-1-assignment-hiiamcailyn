@@ -27,5 +27,13 @@ public class Main
     word.remove(lastIndex);
 
     System.out.println("removed the last word. List is now" + word);
-  }
+
+    System.out.println("The size if te list is" + wordsize());
+    System.out.println("Arraylist;" + word);
+
+    String firstWord = words.get(0); 
+    word.set(word.size()-1, firstWord);
+
+    System.out.println("Replacing the last word with the first word" + word);  
+   }
 }
